@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from django.contrib.messages import constants
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "usuarios",
     "exames",
+    "empresarial",
 ]
 
 MIDDLEWARE = [
@@ -129,7 +131,6 @@ MEDIA_URL = "/media/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-from django.contrib.messages import constants
 
 MESSAGE_TAGS = {
     constants.DEBUG: "alert-primary",
